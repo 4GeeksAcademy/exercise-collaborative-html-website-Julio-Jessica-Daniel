@@ -1,14 +1,15 @@
-<div class="container d-flex align-items-center justify-content-center p-5">
+<link rel="stylesheet" href="styles.css">
+<div class="container">
   <div class="row">
     <div class="col-10">
-        <div class="text m-start-5">
+        <div class="text">
             <h1>The First Heading <span style="color: grey;"> Will Catch Your Eye</span></h1>
             <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         
     </div>
-    <div class="col-2 rounded-circle bg-#A9D0C5">
-        <div class="image justify-content-end align-items-end">
+    <div class="col-2">
+        <div class="image justify-content-end align-items-end overflow-hidden object-fit-cover">
             <img src="assets/img/1.jpg">
         </div>
     </div>
@@ -16,10 +17,16 @@
 
 
 
-
-
-  <style>
-        
+<style>
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .text {
+            margin-right: 20px;
+        }
         .text h1 {
             font-size: 36px;
             font-weight: bold;
@@ -31,10 +38,10 @@
             line-height: 1.2;
         }
         .image {
-            
+            border-radius: 50%;
             width: 200px;
             height: 200px;
-            
+            background-color: #A9D0C5;
             overflow: hidden;
         }
         .image img {
@@ -42,4 +49,13 @@
             height: 100%;
             object-fit: cover;
         }
-    </style>
+        .margin{
+            bottom: 10px;
+        }
+
+.margin {
+    bottom: 10px;
+}
+</style>
+
+
